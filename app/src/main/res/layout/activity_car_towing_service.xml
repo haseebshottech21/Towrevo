@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:focusable="true"
+
+    android:orientation="vertical"
+    tools:context=".ui.activity.CarTowingServiceActivity">
+
+    <include
+        android:id="@+id/noInternetView"
+        layout="@layout/no_internet_layout"
+        android:visibility="gone" />
+
+
+    <include
+        layout="@layout/titlebar_layout"/>
+
+    <include
+        layout="@layout/view_divider"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical">
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginStart="@dimen/_10sdp"
+         android:layout_marginEnd="@dimen/_10sdp"
+         android:layout_marginBottom="@dimen/_20sdp"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImageIV"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_group_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/carTowingServiceTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/car_towing_service"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/title"
+                android:fontFamily="@font/sf_pro_text_bold"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/timeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10 AM to 5 PM"
+                android:drawablePadding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableStart="@drawable/ic_clock"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/text"
+                android:fontFamily="@font/sf_pro_text_regular"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/kmTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.2 Miles"
+                android:drawablePadding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableStart="@drawable/ic_distance"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/text"
+                android:fontFamily="@font/sf_pro_text_regular"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_divider"/>
+
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/aboutTV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/title"
+    android:text="@string/about"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:textSize="@dimen/_14sdp"
+    android:fontFamily="@font/sf_pro_text_bold"/>
+
+
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/aboutDesTV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:textColor="@color/text"
+    android:textSize="@dimen/_12sdp"
+    android:text="@string/towing_service_is_one_among_the_very_few_roadside_assistance_provider_with_its_own_fleet_of_towing_truck_providing_car_towing_service"/>
+
+<include
+    layout="@layout/view_divider"/>
+
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/contactTV"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="@color/title"
+             android:text="@string/contact"
+             android:layout_marginTop="@dimen/_10sdp"
+             android:textSize="@dimen/_14sdp"
+             android:fontFamily="@font/sf_pro_text_bold"/>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <androidx.appcompat.widget.AppCompatImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_location"
+                 android:layout_gravity="top"
+                 android:layout_marginTop="@dimen/_11sdp"
+                 android:gravity="center"/>
+
+
+             <androidx.appcompat.widget.AppCompatTextView
+                 android:id="@+id/addressTV"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/_15sdp"
+                 android:layout_marginTop="@dimen/_8sdp"
+                 android:drawablePadding="@dimen/_10sdp"
+                 android:text="@string/_2913_austin_avenue_lumber_city_ga_georgia_31549"
+                 android:textColor="@color/text"
+                 android:textSize="@dimen/_12sdp" />
+
+         </LinearLayout>
+
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/getDirectionTV"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="@dimen/_27sdp"
+             android:text="GET DIRECTION"
+             android:textColor="@color/blue"
+             android:layout_marginTop="@dimen/_10sdp"
+             android:layout_marginBottom="@dimen/_14sdp"
+             android:textSize="@dimen/_12sdp"/>
+
+         <include
+             layout="@layout/view_divider"/>
+
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/callTV"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="603-843-4110"
+             android:drawableStart="@drawable/ic_call2"
+             android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/blue"
+             android:layout_marginTop="@dimen/_10sdp"
+             android:layout_marginBottom="@dimen/_14sdp"
+             android:textSize="@dimen/_12sdp"/>
+         <include
+             layout="@layout/view_divider"/>
+
+         <androidx.appcompat.widget.AppCompatTextView
+             android:id="@+id/mailTV"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="info@towingservice.com"
+             android:drawableStart="@drawable/ic_mail"
+             android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/blue"
+             android:visibility="gone"
+             android:layout_marginTop="@dimen/_10sdp"
+             android:layout_marginBottom="@dimen/_14sdp"
+             android:textSize="@dimen/_12sdp"/>
+
+     </LinearLayout>
+         <androidx.appcompat.widget.AppCompatButton
+             android:id="@+id/sendInquiryBT"
+             style="@style/button"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_30sdp"
+             android:background="@drawable/btn_bgg"
+             android:gravity="center"
+             android:paddingBottom="@dimen/_15sdp"
+             android:text="@string/send_inquiry"
+            />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

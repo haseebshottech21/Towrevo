@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">TOWREVO</string>
+
+    <!--SignUp-->
+    <string name="signup">Sign Up</string>
+    <string name="user_registration">User Registration</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="email_address">Email Address:</string>
+    <string name="email_addres">Email Address</string>
+    <string name="phone_number">Mobile Number:</string>
+    <string name="vehicle_plate_number">Vehicle Plate Number</string>
+    <string name="password">Password:</string>
+    <string name="passwords">Password:</string>
+    <string name="already_have_account">Already have account?<font color="#125570"> SIGN IN</font></string>
+
+
+    <!--SignIn-->
+    <string name="signIn">Sign In</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account?<font color="#125570"> SIGN UP</font></string>
+    <string name="email_address_or_phone">Email Address/ Mobile Number</string>
+
+    <!--Forget Password-->
+    <string name="forget_password1">Forgot Password?</string>
+    <string name="please_enter_email_to_reset_password">Please enter your email address  \nto reset  your password</string>
+    <string name="send">Send</string>
+
+    <!--Otp Verify-->
+    <string name="otp_verification">OTP Verification</string>
+    <string name="sms_with_code">We have sent you an SMS with a code to the number +66 1234 456 789</string>
+    <string name="expiring_in">Expiring in</string>
+    <string name="verify">Verify</string>
+    <string name="resend_code"><font color="#125570">Re-Send Code</font></string>
+
+    <!--Create New Password-->
+    <string name="create_new_password">Create New Password</string>
+    <string name="new_password">New Password:</string>
+    <string name="new_passwords">New Password</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="confirm_passwords">Confirm Password</string>
+    <string name="reset">Reset</string>
+
+    <!--recepient details-->
+    <string name="recepient_details">Recepient Details</string>
+    <string name="enter_recepient_name">Enter Recepient Name</string>
+    <string name="enter_recepient_pnumber">Enter Recepient Phone Number</string>
+    <string name="change"><font color="#125570">Change</font></string>
+    <string name="continue_key">Continue</string>
+
+    <!--Add vehicle-->
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="vehicle_name">Vehicle Name</string>
+    <string name="vehicle_image">Vehicle Image</string>
+
+    <!--towing type-->
+    <string name="information">Information</string>
+    <string name="now">Now</string>
+    <string name="schedule">Schedule</string>
+    <string name="towing_vehicle_type">Towing Vehicle Type</string>
+    <string name="select_reason_for_towing">Select Reason for Towing</string>
+    <string name="onRoad_service">On Road Service</string>
+    <string name="battery_issue">Battery Issue</string>
+    <string name="flat_tire">Flat Tire</string>
+    <string name="accident">Accident</string>
+    <string name="crash">Crash</string>
+    <string name="other">Other</string>
+    <string name="submit">Submit</string>
+
+
+    <!--error message-->
+
+    <style name="vehicle_plate_number_cant_blank">Please enter vehicle plate number</style>
+
+    <string name="email_address_isvalid">Please enter valid email address</string>
+    <string name="emailaddress_cant_blank">Please enter email address</string>
+    <string name="working_hours_cant_be_blank">Please enter working hours</string>
+    <string name="vehicle_plate_number_cant_blanck">Please enter vehicle plate number</string>
+    <string name="please_enter_recepient_name">Please enter recepient name</string>
+    <string name="please_enter_recepient_pnumber">Please enter recepient phone number</string>
+    <string name="email_phone_can_not_blank">Please enter email address</string>
+    <string name="please_enter_valid_mobile_number">Please enter valid phone number</string>
+
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="goto_settings">Go to settings</string>
+    <string name="the_app_needs_permission_to_use_this_feature">Required permission</string>
+    <string name="error_gif">Error</string>
+    <string name="login">Login</string>
+    <string name="mobile_number">Mobile Number</string>
+    <!--  <string name="forgot_password">Forgot password?</string>-->
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="no_internet">No internet connection </string>
+    <string name="please_check_your_internet_connection">Please check your internet connection and try again</string>
+    <string name="retry">Retry</string>
+    <string name="password_can_not_blank">Please enter password</string>
+    <string name="password_can_not_less_then_4_blank">Password must be atleast 4 characters long </string>
+    <string name="current_password_can_not_less_then_4_blank">Current Password must be atleast 4 characters long </string>
+    <string name="new_password_can_not_less_then_4_blank">New Password must be atleast 4 characters long </string>
+    <string name="confirm_password_can_not_less_then_4_blank">Confirm Password must be atleast 4 characters long </string>
+    <string name="email_can_not_blank">Please enter email Id</string>
+    <string name="email_should_valid">Please enter valid email address</string>
+    <string name="we_have_sent_you_an_sms_with_a_code_to_the_number_33_1234_456_789">We have sent you an SMS with a code to the number </string>
+    <string name="re_send_code">RE-SEND CODE</string>
+    <string name="expiring_in_01_00">Expiring in : 01:00</string>
+    <string name="please_enter_otp">Please_enter_OTP_Code</string>
+
+    <!-- <string name="send">Send</string>-->
+    <string name="term_condition">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="save">Save</string>
+    <string name="address">Address:</string>
+    <!--  <string name="password">Password</string>
+<string name="phone_number">Phone number</string>
+<string name="last_name">Last name</string>
+<string name="first_name">First name</string>
+<string name="signup">Sign Up</string>-->
+    <string name="register">Register</string>
+    <string name="register_as">Register as</string>
+    <string name="registration">Registration</string>
+    <!--   <string name="submit">Submit</string>-->
+    <string name="current_password">Current Password:</string>
+    <string name="current_passwords">Current Password</string>
+    <!-- <string name="new_password">New Password</string>-->
+    <!--   <string name="confirm_password">Confirm Password</string>-->
+    <string name="change_password">Change Password</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="select_option">Select Option</string>
+    <string name="are_you_sure_want_to_exit">Are you sure want to exit?</string>
+    <string name="firstname_can_not_blank">Please enter first name</string>
+    <string name="companyname_can_not_blank">Please enter Company name</string>
+    <string name="name_can_not_blank">Please enter name</string>
+    <string name="aboutus_can_not_blank">Please enter About </string>
+    <string name="lastname_can_not_blank">Please enter last name</string>
+    <string name="phone_can_not_blank">Please enter mobile number</string>
+    <string name="message_can_not_blank">Please enter message</string>
+    <string name="address_can_not_blank">Please enter address</string>
+    <string name="phone_should_valid">Please enter valid mobile number</string>
+    <string name="current_pw_can_not_blank">Please enter Current Password</string>
+    <string name="current_pw_can_not_match">Current password does not match</string>
+    <string name="new_pw_can_not_blank">Please enter New Password</string>
+    <string name="enter_confirm_password">Please enter Confirm Password</string>
+    <string name="confirm_password_can_not_match"> The New Password and Confirm Password does not match</string>
+
+    <string name="confirm_pw_can_not_blank">Please enter confirm password</string>
+    <string name="confirm_pw_can_not_match">Confirm password does not match</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_projects">Projects</string>
+    <string name="title_attendance">Attendence</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_profile">Profile</string>
+    <string name="camera_permission">Camera Permission</string>
+    <string name="share">Share</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!--fb-->
+    <string name="facebook_app_id">804100296288053</string>
+    <string name="fb_login_protocol_scheme">fb804100296288053</string>
+    <string name="logout">Logout</string>
+    <string name="multiple_image">Multiple Image Pick</string>
+    <string name="please_update_version">Please update version</string>
+    <string name="update">Update</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="towing_companies">Towing Companies</string>
+    <string name="towing_service_is_one_among_the_very_few_roadside_assistance_provider_with_its_own_fleet_of_towing_truck_providing_car_towing_service">Towing service is one among the very few roadside assistance provider with its own fleet of towing truck providing Car Towing Service. Apart from its own fleet. We also have large network of car flatbed toeing trucks including Zero degree Car Tow Trucks.</string>
+    <string name="_2913_austin_avenue_lumber_city_ga_georgia_31549">2913 Austin Avenue, Lumber City, GA, \nGeorgia-31549</string>
+    <string name="car_towing_service">Towing Service</string>
+    <string name="inquiry">Inquiry</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_inquiries">My Inquiries</string>
+    <string name="inquiries_management">Inquiry Management</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="contact_id"> +811784510457825</string>
+    <string name="mail_id">jacksmoith@vev.com</string>
+    <string name="contact">Contact</string>
+    <string name="call_us">Call Us</string>
+    <string name="mail_us">Mail Us</string>
+    <string name="faq">FAQs</string>
+    <string name="_10_am_to_9_am_5_2_km">10 AM to 9 AM</string>
+    <string name="kindly_select_one_option_from_the_following_before_registering">Kindly select one option from the \n following before registering</string>
+    <string name="please_enter_your_mobile_number_to_reset_your_password">Please enter your mobile number to reset your password</string>
+    <string name="company_name">Company Name:</string>
+    <string name="company_registration">Company Registration</string>
+    <string name="working_hour">Working Hours:</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="select">Select</string>
+    <string name="search_location">Search Location</string>
+    <string name="user">User</string>
+    <string name="company">Company</string>
+    <string name="next">Next</string>
+    <string name="about">About:</string>
+    <string name="get_direction">GET DIRECTION</string>
+    <string name="send_inquiry">Send Inquiry</string>
+    <string name="inquiry_management">Inquiry Management</string>
+    <string name="images">Images</string>
+    <string name="miles"> Miles</string>
+    <string name="_5_2_km">(5.2 Miles)</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="category">Category</string>
+    <string name="select_category">Select Category</string>
+    <string name="please_select_category">Please select category</string>
+    <string name="message">Message:</string>
+    <string name="how_can_i_share_my_trips_to_my_friend">How can i share my trips to my friend?</string>
+    <string name="how_do_i_obtain_essential_trip_information_with_full_details_of_my_trip">How do I obtain Essential Trip Information with full details of my trip?</string>
+    <string name="What_essential_documents_do_I_need_to_take">What essential documents do I need to take?</string>
+    <string name="sapien_ultricies_hac_netus_ullamcorper_sapien_tempor_aliquam_ultrices_senectus_ac_venenatis">Sapien ultricies hac netus ullamcorper sapien tempor aliquam ultrices senectus ac venenatis?</string>
+    <string name="congue_a_adipiscing_primis_vestibulum_ante_eros">Congue a adipiscing primis vestibulum ante eros?</string>
+    <string name="nunc_porttitor_ac_lorem_fames_morbi_gravida_vestibulum">Nunc porttitor ac lorem fames morbi gravida vestibulum?</string>
+
+    <string name="term_and_condition"><u>terms &amp; conditions</u></string>
+    <string name="privacy_and_policy"><u>privacy policy</u></string>
+
+    <string name="name">Name</string>
+    <string name="uploaded_by">Upload By</string>
+    <string name="done">Done</string>
+    <string name="report">Report</string>
+</resources>

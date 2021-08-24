@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.activity.RecepientDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp">
+
+        <include
+            android:id="@+id/toolbar_layout"
+            layout="@layout/toolbar_layout"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rNameLT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:hint="@string/enter_recepient_name"
+                app:hintTextAppearance="@style/Font12Regular"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/rNameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rPhoneNumberLT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:hint="@string/enter_recepient_pnumber"
+                app:hintTextAppearance="@style/Font12Regular"
+                app:layout_constraintTop_toBottomOf="@id/rNameLT"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/rPhoneNumberET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:inputType="number"
+                    android:maxLength="10"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/numberLT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="XY 12 BH 7117"
+                app:hintTextAppearance="@style/Font12Regular"
+                app:layout_constraintTop_toBottomOf="@id/rPhoneNumberLT"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/numberET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/chnageTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                style="@style/Font12"
+                tools:text="@string/change"
+                android:textAllCaps="true"
+                app:layout_constraintTop_toTopOf="@id/numberLT"
+                app:layout_constraintBottom_toBottomOf="@id/numberLT"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continueBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/button"
+                android:background="@drawable/button_background"
+                tools:text="@string/continue_key"
+                android:layout_marginTop="@dimen/_50sdp"
+                app:layout_constraintTop_toBottomOf="@id/chnageTV"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/no_internet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navView"
+        android:layout_marginTop="?actionBarSize"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/titlebar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/mainRL"
+        android:layout_below="@+id/titleBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navViewLL"
+        android:visibility="visible">
+
+        <fragment
+            android:id="@+id/navController"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/mobile_navigation" />
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        app:itemBackground="@android:color/transparent"
+        app:itemIconSize="@dimen/_50sdp"
+        app:labelVisibilityMode="unlabeled" />
+
+    <LinearLayout
+        android:id="@+id/navViewLL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/projectLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_3sdp">
+
+            <ImageView
+                android:id="@+id/menuProjectImageIV"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/menu_projects_btn" />
+
+            <TextView
+                android:id="@+id/menuProjectTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projects"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10ssp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/attendenceLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_3sdp">
+
+            <ImageView
+                android:id="@+id/menuAttendanceImageIV"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/menu_attendance_btn" />
+
+            <TextView
+                android:id="@+id/menuAttendenceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendance"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10ssp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notificationLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_3sdp">
+
+            <FrameLayout
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/menuNotificationImageIV"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/menu_notification_btn" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/badge_text_view"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_gravity="right|top"
+                    android:background="@drawable/new_bottom_nav_bg"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_6ssp"
+                    tools:text="185" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/menuNotificationTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10ssp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profileLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_3sdp">
+
+            <ImageView
+                android:id="@+id/menuProfileImageIV"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/menu_profile_btn" />
+
+            <TextView
+                android:id="@+id/menuProfileTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

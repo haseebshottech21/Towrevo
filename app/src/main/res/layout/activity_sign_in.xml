@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.activity.SignInActivity">
+
+
+    <include
+        android:id="@+id/noInternetView"
+        layout="@layout/no_internet_layout"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/mainRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/mainLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:src="@drawable/app_icon_round" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signInTV"
+                style="@style/Font20Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_22sdp"
+                tools:text="@string/login" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/emailaddressTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/phone_number"
+                android:textColor="@color/title"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/eaddressET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                style="@style/edittext"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/text"
+                app:hintTextAppearance="@style/Font10Regular" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/passwordTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/passwords"
+                android:textColor="@color/title"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/passwordEET"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="@dimen/_40sdp"
+                style="@style/edittext"
+                app:passwordToggleEnabled="true"
+                android:paddingStart="@dimen/_10sdp"
+                android:inputType="textPassword"
+                android:drawableRight="@drawable/eye_new_close"
+                android:background="@drawable/edit_text_background"
+                android:hint="password" />
+
+
+
+            <!--                app:hintTextAppearance="@style/Font12Regular" />-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/forgetPasswordTV"
+                style="@style/Font12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/sf_pro_text_medium"
+                android:gravity="end"
+                android:textAllCaps="true"
+                android:textColor="@color/blue"
+                tools:text="@string/forget_password" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signInBTN"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainLL"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/btn_bgg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/login" />
+
+
+        <RelativeLayout
+            android:id="@+id/dontHaveAccountTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signInBTN"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dontHaveAnAccountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="Don't have an account?"
+                android:textSize="@dimen/_12sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signUpLoginTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toRightOf="@id/dontHaveAnAccountTV"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="REGISTER"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

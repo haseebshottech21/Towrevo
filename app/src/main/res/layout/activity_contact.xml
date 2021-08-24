@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.activity.ContactActivity">
+
+    <include
+        android:id="@+id/noInternetView"
+        layout="@layout/no_internet_layout"
+        android:visibility="gone" />
+
+
+    <include
+        layout="@layout/titlebar_layout"/>
+
+    <include
+        layout="@layout/view_divider"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/callUsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/call_us"
+        android:gravity="center"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_18sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/callID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="+811784510457825"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_12sdp"/>
+
+
+        <LinearLayout
+            android:id="@+id/mailLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mailUsTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mail_us"
+        android:gravity="center"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_18sdp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="jacksmoith@vev.com"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_12sdp"/>
+        </LinearLayout>
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/aboutUsTV"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/about_us"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="@dimen/_40sdp"-->
+<!--            android:fontFamily="@font/sf_pro_text_bold"-->
+<!--            android:textColor="@color/grey"-->
+<!--            android:textSize="@dimen/_18sdp"/>-->
+
+
+
+    </LinearLayout>
+</LinearLayout>

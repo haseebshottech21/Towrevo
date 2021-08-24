@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:background="@color/white"
+    tools:context=".ui.activity.RegisterActivity">
+
+    <include
+        android:id="@+id/noInternetView"
+        layout="@layout/no_internet_layout"
+        android:visibility="gone" />
+
+
+    <include
+        layout="@layout/titlebar_layout"/>
+
+
+    <include
+        layout="@layout/view_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/registerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Font20Bold"
+            android:textSize="@dimen/_22sdp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/register_as"
+          />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/selectTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Font10Regular"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/Description"
+            android:layout_gravity="center"
+            android:text="@string/kindly_select_one_option_from_the_following_before_registering"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/companyCV"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_140sdp"
+        app:cardElevation="5dp"
+        android:elevation="@dimen/_2sdp"
+        android:background="@drawable/bg_white_border"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/companyImageIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_company"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userCV"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_140sdp"
+        app:cardElevation="3dp"
+        android:background="@drawable/bg_white_border"
+        android:elevation="@dimen/_3sdp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/userImageIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_user1"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/companyTV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:paddingEnd="@dimen/_10sdp"
+           android:fontFamily="@font/sf_pro_text_bold"
+           android:textColor="@color/TextField"
+           android:textSize="@dimen/_14sdp"
+           android:text="@string/company"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/userTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:textColor="@color/TextField"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/user" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

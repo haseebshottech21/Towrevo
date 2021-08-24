@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Towrevo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".application.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.activity.Contact_form"></activity>
+        <!-- <activity android:name=".ui.activity.FullImagesActivity"></activity> -->
+        <activity android:name=".ui.activity.FullImageActivity" />
+        <activity android:name=".ui.activity.FaqsActivity" />
+        <activity android:name=".ui.activity.GetDirectionActivity" />
+        <activity android:name=".ui.activity.CompanyHomeActivity" />
+        <activity android:name=".ui.activity.LocationPickerActivity" />
+        <activity android:name=".ui.activity.CompanyEditProfileActivity" />
+        <activity android:name=".ui.activity.CustomerDetailActivity" />
+        <activity android:name=".ui.activity.CompanyRegisterationActivity" />
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity
+            android:name=".ui.cms.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CarTowsServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MyInquiresActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.UserEditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.InquiryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CarTowingServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TowingCompaniesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TowingTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddVehicleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RecepientDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChangeNewPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.OtpVerificationActivity"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name=".ui.activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CustomerRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/GOOGLE_MAP_KEY" />
+
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.cms.PrivacyPolicyActivity" />
+        <activity android:name=".ui.cms.TermConditionActivity" />
+        <activity android:name=".ui.authentication.CreateNewPasswordActivity" />
+        <activity android:name=".ui.authentication.RegistrationActivity" />
+        <activity android:name=".ui.authentication.ForgotPasswordActivity" />
+        <activity android:name=".ui.activity.MultipleImageGridActivity" />
+        <activity android:name=".ui.authentication.LoginActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+    </application>
+
+</manifest>

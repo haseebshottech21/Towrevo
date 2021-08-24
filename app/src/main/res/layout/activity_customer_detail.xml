@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:background="@color/white"
+    tools:context=".ui.activity.CustomerDetailActivity">
+
+    <include
+        android:id="@+id/noInternetView"
+        layout="@layout/no_internet_layout"
+        android:visibility="gone" />
+
+
+    <include
+        layout="@layout/titlebar_layout"/>
+
+<!--    <include-->
+<!--        layout="@layout/view_divider"/>-->
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:id="@+id/mainLayoutLL"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImageIV"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/ic_group_image"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/userNameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jerry E Allen"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/title"
+                        android:fontFamily="@font/sf_pro_text_bold"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/dateOfInquiryTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="05th Jan,2021"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/text"
+                        android:fontFamily="@font/sf_pro_text_regular"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+<!--            <include-->
+<!--                layout="@layout/view_divider"/>-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/aboutTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title"
+                android:text="@string/message"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/sf_pro_text_semibold"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/aboutInquiryTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/text"
+                android:textSize="@dimen/_12sdp"
+                android:text="@string/towing_service_is_one_among_the_very_few_roadside_assistance_provider_with_its_own_fleet_of_towing_truck_providing_car_towing_service"/>
+
+            <include
+                layout="@layout/view_divider"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/imagesTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title"
+                android:text="@string/images"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/sf_pro_text_semibold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/imagesREC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/item_inquiry_image"
+                tools:itemCount="3"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3" />
+
+
+
+<!--            <FrameLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="@dimen/_10sdp">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="@dimen/_70sdp"-->
+<!--                android:layout_height="@dimen/_70sdp"-->
+<!--                app:cardElevation="0dp"-->
+<!--                app:cardCornerRadius="@dimen/_5sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imgTaskIV"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/app_icon"/>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            </FrameLayout>-->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/contactTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title"
+                android:text="@string/contact"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/sf_pro_text_semibold"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/fullAddressTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:text="@string/_2913_austin_avenue_lumber_city_ga_georgia_31549"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/_12sdp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/getDirectionTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:text="@string/get_direction"
+                android:textColor="@color/blue"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:textSize="@dimen/_12sdp"/>
+
+            <include
+                layout="@layout/view_divider"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/callTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="603-843-4110"
+                android:drawableStart="@drawable/ic_call2"
+                android:drawablePadding="@dimen/_10sdp"
+                android:textColor="@color/blue"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:textSize="@dimen/_12sdp"/>
+            <include
+                layout="@layout/view_divider"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mailTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="info@towingservice.com"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="@dimen/_10sdp"
+                android:textColor="@color/blue"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:textSize="@dimen/_12sdp"/>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

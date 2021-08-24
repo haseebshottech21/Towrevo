@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/bg_bottomsheet_dark">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/bg_bottomviewdark_border" />
+
+    <RelativeLayout
+        android:id="@+id/addAddressRL"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/bg_grey_round"
+        android:paddingVertical="@dimen/_8sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/map2IV"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_icon_target" />
+
+        <TextView
+            android:id="@+id/addressTV"
+            style="@style/Font12Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/map2IV"
+            android:text="Addressstatic" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btnsLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addAddressRL"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/selectBTN"
+            style="@style/Font12"
+            android:layout_width="0dp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_background_yellow"
+            android:textAllCaps="false"
+            tools:text="@string/select" />
+
+        <Button
+            android:id="@+id/cancelBTN"
+            style="@style/Font12"
+            android:layout_width="0dp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_border_yellow"
+            android:textAllCaps="false"
+            tools:text="@string/cancel" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_4sdp"
+        android:layout_below="@+id/btnsLL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_bottomviewdark_border" />
+
+</RelativeLayout>

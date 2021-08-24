@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.activity.AddVehicleActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/noInternetView"
+            layout="@layout/no_internet_layout"
+            android:visibility="gone" />
+
+
+        <include
+            android:id="@+id/toolbar_layout"
+            layout="@layout/toolbar_layout"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/vehicleTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:ms_hint="@string/vehicle_type"
+                app:ms_enableErrorLabel="false"
+                app:ms_dropDownHintView="@layout/item_hint"
+                app:ms_arrowColor="@color/black_80"
+                app:ms_hintColor="@color/black_80"
+                app:ms_floatingLabelColor="@color/black"
+                app:ms_floatingLabelText="@string/vehicle_type"
+                app:ms_alignLabels="true"
+                app:ms_arrowSize="@dimen/_15sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/vehicleNameSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:ms_hint="@string/vehicle_name"
+                app:ms_enableErrorLabel="false"
+                app:ms_dropDownHintView="@layout/item_hint"
+                app:ms_arrowColor="@color/black_80"
+                app:ms_hintColor="@color/black_80"
+                app:ms_floatingLabelColor="@color/black"
+                app:ms_floatingLabelText="@string/vehicle_type"
+                app:ms_alignLabels="true"
+                app:ms_arrowSize="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/vehicleTypeSpinner"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/vehicleImageTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                style="@style/Font20Bold"
+                tools:text="@string/vehicle_image"
+                app:layout_constraintTop_toBottomOf="@id/vehicleNameSpinner"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/vehicleImageRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3"
+                app:layout_constraintTop_toBottomOf="@id/vehicleImageTV"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continueBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/button"
+                android:background="@drawable/button_background"
+                android:text="@string/continue_key"
+                android:layout_marginTop="@dimen/_40sdp"
+                app:layout_constraintTop_toBottomOf="@id/vehicleImageRV"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

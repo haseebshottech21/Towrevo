@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#125570</color>
+    <color name="border">#EEF8FD</color>
+    <color name="black_80">#656667</color>
+    <color name="light_gray">#ECECEC</color>
+    <color name="newbg">#F7F7FA</color>
+    <color name="bg">#FFF8E9</color>
+    <color name="background">#E7F4F7</color>
+    <color name="newBaground">#f8fdff</color>
+
+
+    <color name="Black">#1B1B1B</color>
+    <color name="Description">#6D747A</color>
+    <color name="TextField">#565656</color>
+    <color name="Seperator">#D6D7D9</color>
+    <color name="Brown">#9B8357</color>
+    <color name="Green">#27AE60</color>
+    <color name="text">#64666E</color>
+    <color name="darktext">#1B1B1B</color>
+    <color name="title">#202331</color>
+    <color name="light">#BBBCC7</color>
+    <color name="White">#FFFFFF</color>
+    <color name="LightGrey">#64666E</color>
+    <color name="pink">#FF3333</color>
+    <color name="lightGrey">#F5F5F5</color>
+    <color name="yellow">#FDB30B</color>
+    <color name="grey">#BBBCC7</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightblue">#E5EDED</color>
+    <color name="editTextbg">#F7F7F8</color>
+
+
+    <color name="red">#EB5757</color>
+
+
+</resources>

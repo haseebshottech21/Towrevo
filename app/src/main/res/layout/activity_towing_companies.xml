@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:focusable="true"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.TowingCompaniesActivity">
+
+    <include
+        android:id="@+id/noInternetView"
+        layout="@layout/no_internet_layout"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/towing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/titlebar_layout"/>
+
+    <include
+        android:id="@+id/view"
+        layout="@layout/view_divider"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/towingCompaniesREC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_towing_companies_layout"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/noDataFoundTv"
+            style="@style/Font12Regular"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_200sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data_found" />
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/location"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalScrollbarPosition="defaultPosition"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backArrowIV"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/listViewwIV"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:src="@drawable/ic_list_view"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

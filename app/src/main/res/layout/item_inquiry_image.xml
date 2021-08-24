@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhihu.matisse.internal.ui.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/addPhotosFL"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:visibility="visible"-->
+    <!--        android:layout_weight="1">-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addPhotosFL"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/addNewImage"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_company_image"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!--    </FrameLayout>-->
+
+
+    <FrameLayout
+        android:id="@+id/ll_image_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_82sdp"
+            android:layout_height="@dimen/_82sdp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/thumbIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dummy_image" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="end|top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/closeblue" />
+    </FrameLayout>
+</com.zhihu.matisse.internal.ui.widget.SquareFrameLayout>

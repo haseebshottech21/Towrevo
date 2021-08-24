@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.cms.TermConditionActivity">
+
+    <include
+        android:id="@+id/titlebar_layout"
+        layout="@layout/titlebar_layout" />
+
+    <include
+        layout="@layout/no_internet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <im.delight.android.webview.AdvancedWebView
+        android:id="@+id/termsconditionWV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        tools:ignore="WebViewLayout" />
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White"
+    android:id="@+id/mainLL"
+    tools:context=".ui.activity.Contact_form">
+
+
+
+    <include
+        android:id="@+id/noInternetView"
+        layout="@layout/no_internet_layout"
+        android:visibility="gone"/>
+
+    <include
+        layout="@layout/titlebar_layout"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nameContactTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/sf_pro_text_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+     />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="James Roy "
+        android:textColor="@color/text"
+        android:paddingStart="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        app:hintTextAppearance="@style/Font10Regular"
+        android:inputType="text"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/emailContactTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sf_pro_text_medium"
+        android:textSize="@dimen/_12sdp"
+    />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="jamesroy@mailinator.com "
+        android:textColor="@color/text"
+        android:paddingStart="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        app:hintTextAppearance="@style/Font10Regular"
+        android:inputType="text"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phoneContactTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/sf_pro_text_medium"
+
+     />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/phoneET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="+1 3457841245 "
+        android:textColor="@color/text"
+        android:paddingStart="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        app:hintTextAppearance="@style/Font10Regular"
+        android:inputType="number"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/messageContactTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:fontFamily="@font/sf_pro_text_medium"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+       />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/messageET"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="write message hers! "
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:textColor="@color/text"
+        android:paddingStart="@dimen/_10sdp"
+        android:background="@drawable/edit_text_background"
+        app:hintTextAppearance="@style/Font10Regular"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/submitBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_marginHorizontal="@dimen/_90sdp"
+        android:background="@drawable/bg_circle_color_primary"
+        android:textColor="@color/White"
+        android:fontFamily="@font/sf_pro_text_medium"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

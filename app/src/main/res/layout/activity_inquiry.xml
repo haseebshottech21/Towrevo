@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mailLL"
+    android:focusable="true"
+
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.InquiryActivity">
+
+    <include
+        android:id="@+id/noInternetView"
+        layout="@layout/no_internet_layout"
+        android:visibility="gone" />
+
+
+    <include
+         layout="@layout/titlebar_layout"/>
+
+    <include
+        layout="@layout/view_divider"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/firstNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="@string/first_name"
+            android:textColor="@color/title"
+            android:textSize="@dimen/_12sdp"/>
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryCodePicker"
+            style="@style/EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/white"
+            android:visibility="gone"
+            app:ccpDialog_textColor="@color/white"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showFlag="false"
+            app:ccp_showFullName="false"
+            app:ccp_showNameCode="false"
+            app:ccp_showPhoneCode="true" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/fNameET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="John "
+            android:textColor="@color/text"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/edit_text_background"
+            app:hintTextAppearance="@style/Font10Regular"
+            android:inputType="text"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lastNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/last_name"
+            android:textColor="@color/title"
+            android:textSize="@dimen/_12sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/lNameET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Smith"
+            android:textColor="@color/text"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/edit_text_background"
+            app:hintTextAppearance="@style/Font10Regular"
+            android:inputType="text"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/emailAddressTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/email_address"
+            android:textColor="@color/title"
+            android:textSize="@dimen/_12sdp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/eaddressET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="john123@gmail.com"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/text"
+            android:background="@drawable/edit_text_background"
+            app:hintTextAppearance="@style/Font10Regular"
+            android:inputType="textEmailAddress"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mobileNumberTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/phone_number"
+            android:textColor="@color/title"
+            android:textSize="@dimen/_12sdp"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/pNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="+91 9874563210"
+            android:paddingStart="@dimen/_10sdp"
+            android:maxLength="14"
+            android:textColor="@color/text"
+            android:background="@drawable/edit_text_background"
+            app:hintTextAppearance="@style/Font10Regular"
+            android:inputType="number"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/aboutUSTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/message"
+            android:textColor="@color/title"
+            android:textSize="@dimen/_12sdp"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/aboutET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="message "
+            android:gravity="top"
+            android:textColor="@color/text"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/edit_text_background"
+            app:hintTextAppearance="@style/Font10Regular"
+            android:inputType="textMultiLine"/>
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/attachImageTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardviewbg"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"
+            android:text="Attach Image"
+            android:padding="@dimen/_12sdp"
+            android:textColor="@color/blue"
+            android:drawableStart="@drawable/ic_attach"
+            android:drawablePadding="@dimen/_12sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imagesREC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_image_grid"
+            tools:itemCount="2"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3" />
+
+
+
+
+
+</LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextBT"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/btn_bgg"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

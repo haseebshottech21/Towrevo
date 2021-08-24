@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:fillViewport="true"-->
+<!--    android:focusableInTouchMode="true"-->
+<!--    tools:context=".ui.activity.OtpVerificationActivity">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--       >-->
+
+<!--        <include-->
+<!--            android:id="@+id/toolbar_layout"-->
+<!--            layout="@layout/titlebar_layout"/>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="@dimen/_12sdp"-->
+<!--        android:layout_marginStart="@dimen/_8sdp"-->
+<!--        android:layout_marginEnd="@dimen/_8sdp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/toolbar_layout"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/otpVerifyTV"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            style="@style/Font20Bold"-->
+<!--            tools:text="@string/otp_verification"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"/>-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/sms_with_codeTV"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_20sdp"-->
+<!--            style="@style/Font12"-->
+<!--            android:gravity="start"-->
+<!--            tools:text="@string/sms_with_code"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/otpVerifyTV"-->
+<!--            app:layout_constraintStart_toStartOf="parent"/>-->
+
+<!--        <com.mukesh.OtpView-->
+<!--            android:id="@+id/otp_view"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_30sdp"-->
+<!--            android:inputType="number"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="@dimen/_18sdp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:OtpItemCount="4"-->
+<!--            android:hint="1398"-->
+<!--            app:OtpItemSpacing="@dimen/_20sdp"-->
+<!--            app:OtpLineColor="@color/colorPrimary"-->
+<!--            app:OtpViewType="line"-->
+<!--            android:focusableInTouchMode="true"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/sms_with_codeTV"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"/>-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/expiringInTimeTV"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_20sdp"-->
+<!--            style="@style/Font12"-->
+<!--            tools:text="@string/expiring_in"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/otp_view"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent" />-->
+
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/verifyBTN"-->
+<!--            style="@style/button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_30sdp"-->
+<!--            android:background="@drawable/btn_bgg"-->
+<!--            android:gravity="center"-->
+<!--            android:paddingBottom="@dimen/_15sdp"-->
+<!--            android:text="@string/verify"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/expiringInTimeTV" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/resendCodeTV"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_20sdp"-->
+<!--            style="@style/Font12"-->
+<!--            android:textColor="@color/blue"-->
+<!--            tools:text="@string/resend_code"-->
+<!--            android:textAllCaps="true"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/verifyBTN"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"/>-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--</ScrollView>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mainLL"
+    android:orientation="vertical">
+
+
+
+    <include
+        android:id="@+id/titlebar_layout"
+        layout="@layout/titlebar_layout" />
+
+    <include
+        android:id="@+id/noInternetView"
+        layout="@layout/no_internet_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/otpTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/otp_verification"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mobile_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/we_have_sent_you_an_sms_with_a_code_to_the_number_33_1234_456_789"
+            android:textColor="@color/darktext"
+            android:textSize="@dimen/_12sdp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/hintTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/otpTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/hintTv"
+                android:text="" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <in.aabhasjindal.otptextview.OtpTextView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:cursorVisible="true"
+                app:height="40dp"
+                app:width="40dp"
+                app:otp_box_background="@color/editTextbg"
+                app:bar_enabled="false"
+                app:bar_height="2dp"
+                app:box_margin_left="@dimen/_10sdp"
+                app:box_margin_right="@dimen/_10sdp"
+                app:length="4"
+                app:otp_text_size="20dp"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtExpiring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/expiring_in_01_00"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:textSize="@dimen/_12sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/verifyBT"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/btn_bgg"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_below="@+id/mainLL"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="@string/verify"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/resendEmailVerifyTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/re_send_code"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+</LinearLayout>

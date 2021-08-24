@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_category"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:fontFamily="@font/sf_pro_text_bold"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryREC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        tools:itemCount="3"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        tools:listitem="@layout/item_category_list"
+        android:background="@color/white"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continuueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_below="@+id/categoryREC"
+        android:text="@string/continue_key"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/button_background"
+        android:layout_marginHorizontal="@dimen/_15sdp"/>
+
+
+</RelativeLayout>

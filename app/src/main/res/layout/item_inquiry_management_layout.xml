@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mainLL"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImageIV"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_group_image"/>
+
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/carCompanyTowingServiceTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:drawableEnd="@drawable/ic_next"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:textColor="@color/title"
+                android:text="Car Towing Service"/>
+
+        </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_marginStart="@dimen/_15sdp"
+                   android:orientation="horizontal">
+
+
+                   <androidx.appcompat.widget.AppCompatTextView
+                       android:id="@+id/mobileNumberTV"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_marginTop="@dimen/_5sdp"
+                       android:textSize="@dimen/_12sdp"
+                       android:fontFamily="@font/sf_pro_text_regular"
+                       android:textColor="@color/blue"
+                       android:text="63457-548794"/>
+
+                   <androidx.appcompat.widget.AppCompatTextView
+                       android:id="@+id/dateTV"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_5sdp"
+                       android:text="05th Jan,  2021"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+    </LinearLayout>
+    <include
+        layout="@layout/view_divider"/>
+
+</LinearLayout>
